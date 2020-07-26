@@ -1,0 +1,13 @@
+#leftPanel {
+    -fx-background-color: #fbc687;
+}
+
+.button {
+    -fx-background-color: #ea907a;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-min-width: 120px;
+}
+.button:hover{
+    -fx-background-color: #ea903a;
+}
