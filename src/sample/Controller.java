@@ -33,6 +33,13 @@ public class Controller implements Initializable {
     @FXML
     private StackPane centralPanel;
 
+    /*
+    Nie wiem jak zrobic zeby byly rysowane punkty na plocie.
+    Jezeli zrobie :
+    centralPanel.getChildren().add(firstChart); to dziala ale
+    dodaje nowy chart do panelu a nie zmienia obecnego
+    Chyba metoda initialize nie jest dobrym miejsce na to ??
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         xAxs = new NumberAxis(0,10,1);
@@ -50,8 +57,8 @@ public class Controller implements Initializable {
         btnLoadData.setOnAction(e->{
             System.out.println("Button press test action");
         });
-
-        firstChart.setData(firstChart.getData());
+        // centralPanel.getChildren().add(firstChart); ta linia dziala ale dodaje nowy chart a nie
+        // zmienia oryginalnego
     }
 
 
